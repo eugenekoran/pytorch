@@ -5007,7 +5007,10 @@ a")
         self.checkScript(func, inputs, optimize=True)
 
     def test_math_ops(self):
-
+    
+        def test_ceil():
+            return math.ceil(1.5)
+        
         def test_floor():
             return math.floor(1.5)
 
