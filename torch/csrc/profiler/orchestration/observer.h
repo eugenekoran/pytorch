@@ -89,10 +89,10 @@ struct TORCH_API ExperimentalConfig {
 
 struct TORCH_API AbstractProfilerConfig {
   /*
-  * This class is created to support custom profiling configurations
-  * on various platforms. It defines a common interface and shared state
-  * for different profiler implementations.
-  */
+   * This class is created to support custom profiling configurations
+   * on various platforms. It defines a common interface and shared state
+   * for different profiler implementations.
+   */
   virtual ~AbstractProfilerConfig() = default;
   AbstractProfilerConfig(const AbstractProfilerConfig&) = default;
   AbstractProfilerConfig& operator=(const AbstractProfilerConfig&) = default;
@@ -101,7 +101,7 @@ struct TORCH_API AbstractProfilerConfig {
 
   virtual bool reportInputShapes() const = 0;
 
-protected:
+ protected:
   // Protected default constructor
   AbstractProfilerConfig() = default;
 };

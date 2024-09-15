@@ -49,7 +49,7 @@ ProfilerConfig::ProfilerConfig(
       with_modules{with_modules} {}
 
 bool ProfilerConfig::reportInputShapes() const {
-    return report_input_shapes;
+  return report_input_shapes;
 }
 
 bool ProfilerConfig::disabled() const {
